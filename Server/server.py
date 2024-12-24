@@ -23,7 +23,7 @@ def broadcast(message, client_socket):
                 client.close()
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(('0.0.0.0  ', 5555))
+server.bind(('0.0.0.0', 5555))
 server.listen()
 
 clients = []

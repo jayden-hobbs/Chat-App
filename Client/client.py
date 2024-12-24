@@ -17,7 +17,7 @@ def send():
         client.send(message.encode('utf-8'))
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.100', 5555))
+client.connect(('127.0.0.1', 5555))
 
 threading.Thread(target=receive).start()
 threading.Thread(target=send).start()
